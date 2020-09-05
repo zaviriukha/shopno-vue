@@ -82,6 +82,14 @@ module.exports = {
         800: '#2d3748',
         900: '#1a202c',
       },
+
+      blue: {
+        300: '#90CDF4'
+      },
+
+      teal: {
+        300: '#81E6D9'
+      }
     },
     fontFamily: {
       sans: [
