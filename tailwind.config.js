@@ -34,6 +34,7 @@ module.exports = {
       },
       fontSize: {
         '45': '2.813rem',
+        '18': '1.125rem'
       }
     },
     container: {
@@ -87,7 +88,8 @@ module.exports = {
         1010: '#363636',
         1020: '#777879',
         1030: '#b5b5b5',
-        1040: '#eff0f2'
+        1040: '#eff0f2',
+        1050: '#eff0f2'
       },
 
       blue: {

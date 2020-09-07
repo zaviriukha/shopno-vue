@@ -16,9 +16,12 @@
     "gridsome": "^0.7.20",
     "gridsome-plugin-remark-shiki": "^0.3.1",
     "gridsome-plugin-rss": "^1.2.0",
+    "vue": "^2.6.12",
     "vue-fuse": "^2.2.1",
     "vue-scrollto": "^2.18.2",
-    "vue-tailwind": "^1.2.5"
+    "vue-tailwind": "^1.2.5",
+    "vue-template-compiler": "^2.6.12",
+    "vueperslides": "^2.10.7"
   },
   "devDependencies": {
     "cypress": "^5.0.0",

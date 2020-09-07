@@ -5,7 +5,7 @@ import DefaultLayout from '~/layouts/Default.vue'
 import VueScrollTo from 'vue-scrollto'
 import VueFuse from 'vue-fuse'
 import VueTailwind from 'vue-tailwind'
-import Vue from "vue";
+import VueCarousel from 'vue-carousel'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
@@ -16,7 +16,8 @@ export default function (Vue, { router, head, isClient }) {
     easing: "ease",
   })
 
-  Vue.use(VueFuse)
+  Vue.use(VueFuse);
+  Vue.use(VueCarousel);
 
   const settings = {
     TModal: {
@@ -57,7 +58,7 @@ export default function (Vue, { router, head, isClient }) {
     }
   }
 
-  Vue.use(VueTailwind, settings)
+  Vue.use(VueTailwind, settings);
 
   head.meta.push({
     name: 'keywords',
