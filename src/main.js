@@ -1,15 +1,12 @@
-// This is the main.js file. Import global CSS and scripts here.
-// The Client API can be used here. Learn more: gridsome.org/docs/client-api
-
 import DefaultLayout from '~/layouts/Default.vue'
 import VueScrollTo from 'vue-scrollto'
 import VueFuse from 'vue-fuse'
 import VueTailwind from 'vue-tailwind'
-import VueCarousel from 'vue-carousel'
+import VueGallery from 'vue-gallery'
 
 export default function (Vue, { router, head, isClient }) {
-  // Set default layout as a global component
-  Vue.component('Layout', DefaultLayout)
+  Vue.component('Layout', DefaultLayout);
+  Vue.component('VGallery', VueGallery);
 
   Vue.use(VueScrollTo, {
     duration: 500,
@@ -17,7 +14,6 @@ export default function (Vue, { router, head, isClient }) {
   })
 
   Vue.use(VueFuse);
-  Vue.use(VueCarousel);
 
   const settings = {
     TModal: {
@@ -80,5 +76,3 @@ export default function (Vue, { router, head, isClient }) {
     href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,700'
   })
 }
-
-
