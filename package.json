@@ -8,6 +8,8 @@
     "test": "./node_modules/.bin/cypress open"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@gridsome/plugin-sitemap": "^0.4.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.2",
@@ -25,6 +27,9 @@
     "vueperslides": "^2.10.7"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/vue-fontawesome": "^2.0.0",
     "cypress": "^5.0.0",
     "gridsome-plugin-tailwindcss": "^3.0.1",
     "node-sass": "^4.14.1",

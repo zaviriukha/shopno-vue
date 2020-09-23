@@ -3,10 +3,16 @@ import VueScrollTo from 'vue-scrollto'
 import VueFuse from 'vue-fuse'
 import VueTailwind from 'vue-tailwind'
 import VueGallery from 'vue-gallery'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faUserSecret)
 
 export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout);
   Vue.component('VGallery', VueGallery);
+  Vue.component('font-awesome-icon', FontAwesomeIcon)
 
   Vue.use(VueScrollTo, {
     duration: 500,
