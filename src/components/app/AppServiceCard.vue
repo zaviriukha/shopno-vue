@@ -29,6 +29,7 @@ export default {
 <style scoped>
 .bigBlock{
   width: 590px;
+
 }
 .smallBlock{
   width: 474px;
