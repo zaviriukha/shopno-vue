@@ -1,7 +1,7 @@
 <template>
-  <div class="pt-40 pr-16 pb-10 pl-8  w-11/12" :class="[bigBlock?'bigBlock':'smallBlock']" :style="{ backgroundImage: `url('${backgroundImage}')`  }">
-    <div class="text-lg pb-6 text-white font-bold uppercase ">Designing is The Cool</div>
-    <div class="pb-16 text-base text-white">Our most popular service is our Virtual Receptionist. We know that ...</div>
+  <div class="lg:pt-40 sm:pt-20 pt-10 sm:pr-16 sm:pr-8 pr-4 pb-10 sm:pl-8 pl-4 bg-cover bg-no-repeat w-11/12" :class="[bigBlock?'bigBlock':'smallBlock']" :style="{ backgroundImage: `url('${backgroundImage}')`  }">
+    <div class="text-lg pb-6 text-white font-bold uppercase ">{{ title}}</div>
+    <div class="pb-16 text-base text-white">{{ shortDesc}}</div>
     <slot/>
   </div>
 </template>
@@ -13,7 +13,8 @@ export default {
     bigBlock: Boolean,
     backgroundImage: String,
     title: String,
-    prevText: String
+    prevText: String,
+    shortDesc: String
   },
   computed: {
     // width: function () {
@@ -26,12 +27,41 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .bigBlock{
   width: 590px;
-
 }
+
 .smallBlock{
   width: 474px;
 }
+
+@media screen and (max-width: 736px) and (min-width: 540px) {
+  .smallBlock {
+    width: 510px;
+  }
+  .bigBlock{
+    width: 510px;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .smallBlock {
+    width: 380px;
+  }
+  .bigBlock{
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .smallBlock {
+    width: 340px;
+  }
+  .bigBlock{
+    width: 340px;
+  }
+}
+
+
 </style>

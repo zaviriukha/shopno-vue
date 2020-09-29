@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col lg:flex-row flex-wrap justify-center gap-3">
+  <div class="flex  lg:flex-row flex-wrap justify-center gap-3">
     <vue-gallery :images="images" :index="index" @close="index = null"></vue-gallery>
     <div
         class="image "
